@@ -3,8 +3,8 @@ project(main)
 
 set(SOURCE_FILES main.cpp)
 
-add_executable(main ${SOURCE_FILES})
+add_executable(asm-opcode ${SOURCE_FILES})
 
-target_link_libraries(main PUBLIC converter)
+target_link_libraries(asm-opcode encoder decoder)
 
-install(TARGETS main)
+install(TARGETS asm-opcode)

@@ -1,0 +1,7 @@
+add x5, x6, x7
+ld x5, 0xF(x6)
+addi x5, x6, -8
+sd x5, -8(x6)
+beq x0, x0, -20
+lui x5, 0xbffe1000
+jal x5, 128
